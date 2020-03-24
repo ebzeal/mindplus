@@ -1,0 +1,47 @@
+$font: 'Montserrat', sans-serif;
+$black: #000000;
+
+body {
+  font-family: $font;
+  color: $black;
+  margin:0px 10%;
+} 
+
+h1,h2,h3,h4 {
+  font-family: $font;
+}
+
+h1 {
+  font-weight: bold;
+font-size: 45px;
+line-height: 61px;
+letter-spacing: 0.04em;
+}
+
+h3 {
+  font-size: 14px;
+line-height: 28px;
+letter-spacing: 0.5em;
+font-weight: normal;
+}
+
+
+
+.space-between{
+  flex-grow: 2;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
