@@ -15,7 +15,7 @@ const Banner = () => (
     </TextDiv>
     <div className="space-between" />
     <ImageDiv bgImage={imageUrl}>
-      <img src="https://mindplus.biz/wp-content/uploads/2020/03/consulting.jpg" alt="Organizational Development" />
+      <img src="https://mindplus.biz/wp-content/uploads/2020/03/organization.jpg" alt="Organizational Development" />
     </ImageDiv>
   </BannerDiv>
 );
