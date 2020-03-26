@@ -16,7 +16,7 @@ const ImageDiv = styled.div`
   background-size: cover;
   background-repeat:no-repeat;
   height: 750px;
- margin-top: -350px;
+ margin-top: -500px;
  margin-left: 45%;
  margin-right: -10%;
 
@@ -27,7 +27,13 @@ const ImageDiv = styled.div`
  margin-left: 5%;
    opacity:0.7;
 
+
+  @media only screen and (max-device-width: 650px) {
+    display: none;
+  }
  }
+
+ 
 `;
 
 const SmallText = styled.p`
