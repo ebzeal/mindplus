@@ -8,7 +8,7 @@ export default styled.div`
   text-transform: uppercase;
   height: 50px;
   padding: 15px 20px 5px 20px;
-  margin-top: 2%;
+  margin-top: 3.5%;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
