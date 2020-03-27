@@ -5,7 +5,7 @@ const slideInRightAnimation = keyframes`${slideInRight}`;
 
 const AboutContainer = styled.div`
   animation: 4s ${slideInRightAnimation};
-  margin: 5% 10% 15% 10%;
+  margin: 5% 10%;
 `;
 
 const ContentDiv = styled.div`

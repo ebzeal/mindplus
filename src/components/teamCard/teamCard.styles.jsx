@@ -17,7 +17,7 @@ const TeamImage = styled.div`
 
 const TeamMemberDetail = styled.div`
   width: 100%;
-  padding-left: 5%;
+  padding: 0px 5%;
   :hover {
     width: 100%;
     background: -webkit-linear-gradient(180deg, #6c63ff 0%, #c77cf1 100%);
