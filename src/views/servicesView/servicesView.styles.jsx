@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { flipInX } from 'react-animations';
+
+const flipInXAnimation = keyframes`${flipInX}`;
 
 const Container = styled.div`
+  animation: 4s ${flipInXAnimation};
   margin: 0px 10%;
 `;
 

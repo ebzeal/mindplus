@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { slideInRight } from 'react-animations';
+
+const slideInRightAnimation = keyframes`${slideInRight}`;
 
 const AboutContainer = styled.div`
+  animation: 4s ${slideInRightAnimation};
   margin: 5% 10% 15% 10%;
 `;
 
