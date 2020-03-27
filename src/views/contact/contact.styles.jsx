@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { rubberBand } from 'react-animations';
+
+const rubberBandAnimation = keyframes`${rubberBand}`;
 
 const ContactDiv = styled.div`
+  animation: 4s ${rubberBandAnimation};
   margin: 0 10% 10% 10%;
 `;
 

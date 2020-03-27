@@ -7,6 +7,7 @@
     "test": "jest -u --coverage",
     "test:coverage": "jest --coverage --colors && cat ./coverage/lcov.info",
     "test:watch": "jest -u --coverage --watch",
+    "build": "webpack",
     "dev": "webpack-dev-server  --open --hot",
     "lint": "eslint src --fix"
   },
@@ -33,6 +34,7 @@
     "moxios": "^0.4.0",
     "noty": "^3.2.0-beta",
     "react": "^16.13.0",
+    "react-animations": "^1.0.0",
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
     "react-router-dom": "^5.1.2",

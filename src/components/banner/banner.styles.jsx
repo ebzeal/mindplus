@@ -1,6 +1,10 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { rollIn } from 'react-animations';
+
+const rollInAnimation = keyframes`${rollIn}`;
 
 const BannerDiv = styled.div`
+animation: 4s ${rollInAnimation};
  display: flex:
  flex-wrap: wrap;
  margin: 50px 0px 0px 10%;
