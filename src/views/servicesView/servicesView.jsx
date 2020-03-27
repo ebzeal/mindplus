@@ -3,10 +3,10 @@ import React from 'react';
 import PageTitle from '../../components/pageTitle/pageTitle';
 import Card from '../../components/cards/cards';
 
-import CardContainer from './servicesView.styles';
+import { Container, CardContainer } from './servicesView.styles';
 
 const Services = () => (
-  <>
+  <Container>
     <PageTitle title="Services" />
 
     <CardContainer>
@@ -26,7 +26,7 @@ const Services = () => (
         readMore
       />
     </CardContainer>
-  </>
+  </Container>
 );
 
 export default Services;

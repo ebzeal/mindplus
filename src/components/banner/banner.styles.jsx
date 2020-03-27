@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const BannerDiv = styled.div`
  display: flex:
  flex-wrap: wrap;
- margin-top: 50px;
+ margin: 50px 0px 0px 10%;
 `;
 
 const TextDiv = styled.div`
@@ -38,6 +38,10 @@ const ImageDiv = styled.div`
 
 const SmallText = styled.p`
   text-transform: uppercase;
+
+
+@media only screen and (max-device-width: 650px) {
+ font-size: 12px;
 `;
 
 export { BannerDiv, TextDiv, ImageDiv, SmallText };

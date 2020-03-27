@@ -16,7 +16,7 @@ const TeamImage = styled.div`
 `;
 
 const TeamMemberDetail = styled.div`
-  max-width: 60%;
+  width: 100%;
   padding-left: 5%;
   :hover {
     width: 100%;
