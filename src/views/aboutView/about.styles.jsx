@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 const AboutContainer = styled.div`
-  margin-top: 5%;
-  margin-bottom: 15%;
+  margin: 5% 10% 15% 10%;
 `;
 
 const ContentDiv = styled.div`

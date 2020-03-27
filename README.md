@@ -1,36 +1,35 @@
-# react-webpack-boiler-plate
+# Mindplus
 
-A retail store app for inventory and sales management.
+A Human Capital and Business Development company.
 
 # Installation
 
-- use `git clone https://github.com/ebzeal/store-manager-frontend` to copy the codes into your repository/local computer to acccess the codes
+- use `git clone https://github.com/ebzeal/mindplus` to copy the codes into your repository/local computer to acccess the codes
 - npm init
 - To run npm run start
 
+# Technologies
+
+- HTML
+- CSS
+- JavaScript
+- React JS
+- Styled Components
+
 # Features
 
-- There are two access priviledges
-  - Store Owner (Admin)
-  - Store Attendant (User)
-- Admin can add a product
-- Admin/store attendant can view all products and specific products
-- Store attendant can add a sale order and view his sales orders
-- Admin can get all sale order records
-- More features will be added
+- Responsiveness
+- Animations
 
-# API Endpoints
 
-https://v2-store-manager.herokuapp.com/api-docs/
+# Mockup
 
-# Usage
+- https://xd.adobe.com/view/43f8ea3d-3523-4d65-4a6f-ad3477ce9e11-35c9/?fullscreen&hints=off
 
-- Create an admin profile
-- Add users (Store Attendant) profiles
 
 # Demo
 
-- https://ebzealstore.herokuapp.com/
+- 
 
 # Contributing
 

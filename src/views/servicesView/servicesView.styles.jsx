@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+const Container = styled.div`
+  margin: 0px 10%;
+`;
+
 const CardContainer = styled.div`
   display: flex;
   margin: -3% -5% 15% -5%;
@@ -9,4 +13,4 @@ const CardContainer = styled.div`
   }
 `;
 
-export default CardContainer;
+export { Container, CardContainer };

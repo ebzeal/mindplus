@@ -4,7 +4,7 @@ $black: #000000;
 body {
   font-family: $font;
   color: $black;
-  margin:0px 10%;
+  margin:0px;
 } 
 
 h1,h2,h3,h4 {
@@ -16,6 +16,13 @@ h1 {
 font-size: 45px;
 line-height: 61px;
 letter-spacing: 0.04em;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0;
+  font-weight: bold;
 }
 
 
@@ -52,4 +59,44 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+@media only screen and (max-device-width: 650px) {
+  h1 {
+
+font-size: 35px;
+line-height: 50px;
+letter-spacing: 0.02em;
+  }
+
+
+  h3 {
+    font-size: 13px;
+line-height: 20px;
+letter-spacing: 0.4em;
+  }
+
+  h4 {
+    font-size: 12px;
+  line-height: 15px;
+  }
+}
+
+
+
+
+@media only screen and (max-device-width: 650px) {
+  h1 {
+font-size: 25px;
+line-height: 30px;
+letter-spacing: 0.02em;
+  }
+
+
+  h3 {
+    font-size: 12px;
+line-height: 28px;
+letter-spacing: 0.2em;
+  }
 }
