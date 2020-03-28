@@ -13,6 +13,11 @@ const MenuItem = styled.a`
   font-weight: bold;
   text-transform: uppercase;
   margin: 0px 20px;
+  cursor: pointer;
+
+  :hover {
+    color: rgba(239, 126, 45, 0.6);
+  }
 `;
 
 export { MenuDiv, MenuItem };

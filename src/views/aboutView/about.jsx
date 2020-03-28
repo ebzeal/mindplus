@@ -4,7 +4,7 @@ import PageTitle from '../../components/pageTitle/pageTitle';
 
 import { AboutContainer, ContentDiv, ImgDiv, TextContent } from './about.styles';
 
-const About = ({}) => (
+const About = () => (
   <AboutContainer>
     <PageTitle title="About us" />
     <h1>

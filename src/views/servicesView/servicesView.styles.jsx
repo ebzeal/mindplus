@@ -5,7 +5,7 @@ const flipInXAnimation = keyframes`${flipInX}`;
 
 const Container = styled.div`
   animation: 4s ${flipInXAnimation};
-  margin: 0px 10%;
+  margin: 5% 10%;
 `;
 
 const CardContainer = styled.div`
