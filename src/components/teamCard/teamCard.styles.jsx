@@ -17,7 +17,7 @@ const TeamImage = styled.div`
 
 const TeamMemberDetail = styled.div`
   width: 100%;
-  padding: 0px 5%;
+  padding: 0px 5% 0 8%;
   :hover {
     width: 100%;
     background: -webkit-linear-gradient(180deg, #6c63ff 0%, #c77cf1 100%);
@@ -27,9 +27,9 @@ const TeamMemberDetail = styled.div`
 
 const CardText = styled.p`
   font-size: 13px;
-  line-height: 15px;
+  line-height: 20px;
   width: 100%;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
 `;
 
 export { TeamCardDiv, TeamImage, TeamMemberDetail, CardText };

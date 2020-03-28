@@ -10,8 +10,8 @@ const HomePage = () => (
   <>
     <Banner />
     <About />
-    <Services />
     <Teams />
+    <Services />
     <Newsletter />
     <Contact />
   </>

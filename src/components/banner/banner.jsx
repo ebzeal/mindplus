@@ -8,9 +8,9 @@ import imageUrl from '../../assets/bannerSVG.svg';
 const Banner = () => (
   <BannerDiv>
     <TextDiv>
-      <SmallText>effective</SmallText>
-      <h1>ORGANIZATIONAL DEVELOPMENT</h1>
-      <h4>We take pride in our facilitative method of delivery, and our practical approach toward development.</h4>
+      <SmallText>mind over matter</SmallText>
+      {/* <h1>mind over matter</h1> */}
+      <h1>coming to grips with your life, business, career</h1>
       <BannerContact />
     </TextDiv>
     <div className="space-between" />
