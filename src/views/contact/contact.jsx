@@ -1,26 +1,19 @@
 import React from 'react';
 
-import {
-  ContactDiv,
-  ContactContainer,
-  ContactDetailsDiv,
-  ContactAddress,
-  ContactDetails,
-  ContactMap
-} from './contact.styles';
+import { ContactDiv, ContactContainer, ContactDetailsDiv, ContactDetails, ContactMap } from './contact.styles';
 
 import { ReactComponent as CallIcon } from '../../assets/ic_call.svg';
 import { ReactComponent as MailIcon } from '../../assets/ic_email.svg';
+import { ReactComponent as InstagramIcon } from '../../assets/icons8-instagram.svg';
+import { ReactComponent as FacebookIcon } from '../../assets/icons8-facebook.svg';
+import { ReactComponent as LinkedinIcon } from '../../assets/icons8-linkedin.svg';
+import { ReactComponent as BlogIcon } from '../../assets/icons8-google-blog.svg';
 
 const Contact = () => (
   <ContactDiv>
     <h2>CONTACTS</h2>
     <ContactContainer>
       <ContactDetailsDiv>
-        <ContactAddress>
-          Plot 371A Alhaji Usman Street, Off Adeniji Street, By AY Hotel, Off Agidingbi Road, Ogba, Lagos.
-        </ContactAddress>
-
         <ContactDetails>
           <CallIcon />
           <span> 234-803-329-1473 </span>
@@ -29,6 +22,22 @@ const Contact = () => (
         <ContactDetails>
           <MailIcon />
           <span> info@mindplus.biz </span>
+        </ContactDetails>
+        <ContactDetails href="https://www.instagram.com/noruwaedokpolo/?hl=en">
+          <InstagramIcon />
+          <span> noruwaedokpolo </span>
+        </ContactDetails>
+        <ContactDetails href="https://business.facebook.com/Noruwa-Edokpolo-590483904780227/?ref=your_pages">
+          <FacebookIcon />
+          <span> Noruwa Edokpolo </span>
+        </ContactDetails>
+        <ContactDetails href="https://www.linkedin.com/in/noruwa/">
+          <LinkedinIcon />
+          <span> noruwa </span>
+        </ContactDetails>
+        <ContactDetails href="https://businessmentorships.blogspot.com/">
+          <BlogIcon />
+          <span> Blog </span>
         </ContactDetails>
       </ContactDetailsDiv>
       <ContactMap>

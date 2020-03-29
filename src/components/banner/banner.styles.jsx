@@ -33,7 +33,7 @@ const ImageDiv = styled.div`
 
 
   @media only screen and (max-device-width: 650px) {
-    display: none;
+    margin: 100% 10%;
   }
  }
 

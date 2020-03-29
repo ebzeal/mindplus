@@ -27,11 +27,12 @@ const ContactAddress = styled.p`
   margin-bottom: 2%;
 `;
 
-const ContactDetails = styled.div`
+const ContactDetails = styled.a`
   font-weight: bold;
   line-height: 16px;
   font-size: 14px;
-  margin-bottom: 2%;
+  display: flex;
+  margin-top: 7%;
 
   span {
     margin-left: 2%;
