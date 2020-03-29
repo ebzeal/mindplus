@@ -24,7 +24,7 @@ const ImageDiv = styled.div`
  margin-left: 45%;
  margin-right: -10%;
 
- img {
+ video {
   margin-top: 120px;
    position: inherit;
    width:90%;

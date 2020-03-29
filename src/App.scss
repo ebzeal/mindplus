@@ -100,3 +100,14 @@ line-height: 28px;
 letter-spacing: 0.2em;
   }
 }
+
+
+.inputStyle {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1em;
+  -webkit-box-shadow: 5px 5px 31px 5px rgba(0, 0, 0, 0.16);
+  box-shadow: 5px 5px 31px 5px rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+  border: none;
+
+}

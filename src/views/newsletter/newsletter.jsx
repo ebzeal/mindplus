@@ -6,9 +6,8 @@ import { NewsletterDiv, NewsletterTitle } from './newsletter.styles';
 
 const Newsletter = () => (
   <NewsletterDiv>
-    <NewsletterTitle>Speak with us</NewsletterTitle>
+    <NewsletterTitle>Speak with us today, your first consultation is free. </NewsletterTitle>
     <BannerContact />
   </NewsletterDiv>
 );
-
 export default Newsletter;

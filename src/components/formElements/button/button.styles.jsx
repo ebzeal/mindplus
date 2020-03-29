@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export default styled.div`
+export default styled.button.attrs(({ type, size }) => ({
+  type
+}))`
   background: -webkit-linear-gradient(180deg, #fddb71 0%, #f0883f 100%);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -12,7 +14,7 @@ export default styled.div`
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
-
+  width: 100%;
   :hover {
     background: -webkit-linear-gradient(202.46deg, #fff8e1 0.54%, #ffcc80 88.49%);
     color: #000000;
