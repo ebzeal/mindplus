@@ -14,8 +14,10 @@ const NewsletterDiv = styled.div`
 
 const NewsletterTitle = styled.h2`
   color: #ffffff;
-  width: 20%;
+  font-size: 19px;
+  width: 60%;
   padding-top: 2%;
+  margin-right: 5%;
 `;
 
 export { NewsletterDiv, NewsletterTitle };

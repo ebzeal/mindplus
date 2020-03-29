@@ -9,13 +9,18 @@ const Banner = () => (
   <BannerDiv>
     <TextDiv>
       <SmallText>mind over matter</SmallText>
-      {/* <h1>mind over matter</h1> */}
       <h1>coming to grips with your life, business, career</h1>
       <BannerContact />
     </TextDiv>
     <div className="space-between" />
     <ImageDiv bgImage={imageUrl}>
-      <img src="https://mindplus.biz/wp-content/uploads/2020/03/organization.jpg" alt="Organizational Development" />
+      <video controls autoPlay>
+        <source
+          src="https://res.cloudinary.com/dxehksqg1/video/upload/v1585438995/mindplus/WhatsApp_Video_2020-03-26_at_6.32.48_PM_rbhzwy.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
     </ImageDiv>
   </BannerDiv>
 );

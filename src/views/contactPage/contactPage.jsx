@@ -1,10 +1,10 @@
 import React from 'react';
-import Newsletter from '../newsletter/newsletter';
 import Contact from '../contact/contact';
+import ContactForm from '../../components/contactForm/contactForm';
 
 const ContactPage = () => (
   <>
-    <Newsletter />
+    <ContactForm />
     <Contact />
   </>
 );
