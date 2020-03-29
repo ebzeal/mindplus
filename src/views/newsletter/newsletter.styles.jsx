@@ -18,6 +18,13 @@ const NewsletterTitle = styled.h2`
   width: 60%;
   padding-top: 2%;
   margin-right: 5%;
+  line-height: 38px;
+  letter-spacing: 0.2em;
 `;
 
-export { NewsletterDiv, NewsletterTitle };
+const ButtonDiv = styled.div`
+  align-self: center;
+  width: 100%;
+`;
+
+export { NewsletterDiv, NewsletterTitle, ButtonDiv };
