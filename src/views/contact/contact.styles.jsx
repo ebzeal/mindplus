@@ -14,10 +14,10 @@ const ContactContainer = styled.div`
 `;
 
 const ContactDetailsDiv = styled.div`
-  width: 40%;
-  @media only screen and (max-device-width: 650px) {
-    width: 100%;
-  }
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 const ContactAddress = styled.p`
@@ -28,14 +28,16 @@ const ContactAddress = styled.p`
 `;
 
 const ContactDetails = styled.a`
-  font-weight: bold;
   line-height: 16px;
   font-size: 14px;
   display: flex;
-  margin-top: 7%;
-
+  flex-wrap: wrap;
+  width: auto;
+  flex-basis: 30%;
+  margin-top: 3%;
   span {
-    margin-left: 2%;
+    padding: 0 4%;
+    width: 70%;
   }
 `;
 

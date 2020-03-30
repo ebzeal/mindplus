@@ -8,6 +8,11 @@ const Menu = ({ history }) => (
     <MenuItem onClick={() => history.push('/about')}>about</MenuItem>
     <MenuItem onClick={() => history.push('/services')}>services</MenuItem>
     <MenuItem onClick={() => history.push('/contact')}> contacts </MenuItem>
+    <MenuItem>
+      <a href="https://businessmentorships.blogspot.com/" target="_blank" rel="noopener noreferrer">
+        blog
+      </a>
+    </MenuItem>
   </MenuDiv>
 );
 
