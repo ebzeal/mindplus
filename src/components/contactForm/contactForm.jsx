@@ -16,7 +16,7 @@ const ContactForm = () => {
   };
 
   const resetForm = () => {
-    setValues({ ...'' });
+    setValues({ name: '', email: '', services: '', message: '' });
   };
 
   const handleSubmit = e => {
@@ -24,14 +24,14 @@ const ContactForm = () => {
     const { name, email, message } = values;
     // resetForm();
     const templateParams = {
-      send_to: 'ebzeal@yahoo.com',
+      send_to: 'info@mindplus.biz',
       sent_by: 'info@mindplus.biz',
       from_name: name,
       email,
       to_name: 'Mindplus Admin',
       message_html: message
     };
-    emailjs.send('ebenezerajayi@gmail.com', 'template_UMzZJVO8', templateParams, 'user_ogPshr5ZODigQHF7m7jKB');
+    emailjs.send('gmail', 'template_HODWN9od', templateParams, 'user_d6JNSmosRt6azEHgC1dwe');
     resetForm();
   };
 
