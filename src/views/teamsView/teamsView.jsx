@@ -9,7 +9,7 @@ const Teams = () => (
   <Container>
     <TeamContainer>
       <TeamCard
-        teamImage="https://mindplus.biz/wp-content/uploads/2020/03/noruwa-1-640x430.jpg"
+        teamImage="https://res.cloudinary.com/dxehksqg1/image/upload/v1585825976/mindplus/noruwa-1-640x430_kbi75t.jpg"
         name="Noruwa"
         position="Principal Consultant."
         text="

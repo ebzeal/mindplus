@@ -14,7 +14,10 @@ const About = () => (
     </h1>
     <ContentDiv>
       <ImgDiv>
-        <img src="https://mindplus.biz/wp-content/uploads/2020/03/conference-room.jpg" alt="About Mindplus" />
+        <img
+          src="https://res.cloudinary.com/dxehksqg1/image/upload/v1585825969/mindplus/conference-room_kxgc5m.jpg"
+          alt="About Mindplus"
+        />
       </ImgDiv>
       <div className="space-between" />
       <TextContent>
