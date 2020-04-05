@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { Form, FormGroup, Label, Input } from 'reactstrap';
 import * as emailjs from 'emailjs-com';
+import Noty from 'noty';
 
 import Button from '../formElements/button/button';
 import { Container } from '../../views/servicesView/servicesView.styles';
@@ -15,14 +16,19 @@ const ContactForm = () => {
     setValues({ ...values, [name]: value });
   };
 
+  const sendNotification = () => {
+    new Noty({
+      text: 'Thank you for your mail. We will contact you shortly'
+    }).show();
+  };
+
   const resetForm = () => {
     setValues({ name: '', email: '', services: '', message: '' });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
     const { name, email, message } = values;
-    // resetForm();
     const templateParams = {
       send_to: 'info@mindplus.biz',
       sent_by: 'info@mindplus.biz',
@@ -31,8 +37,22 @@ const ContactForm = () => {
       to_name: 'Mindplus Admin',
       message_html: message
     };
-    emailjs.send('gmail', 'template_HODWN9od', templateParams, 'user_d6JNSmosRt6azEHgC1dwe');
+    await emailjs.send('info@mindplus.biz', 'template_HODWN9od', templateParams, 'user_d6JNSmosRt6azEHgC1dwe');
+    // new Noty({
+    //   text: 'Thank you for your mail. We will contact you shortly'
+    // }).show();
     resetForm();
+
+    new Noty({
+      layout: 'topRight',
+      theme: 'sunset',
+      closeWith: ['click'],
+      text: 'Thank you for your mail. We will contact you shortly',
+      animation: {
+        open: 'animated bounceInRight', // Animate.css class names
+        close: 'animated bounceOutRight' // Animate.css class names
+      }
+    }).show();
   };
 
   return (
