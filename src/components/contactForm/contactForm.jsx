@@ -6,7 +6,7 @@ import Noty from 'noty';
 
 import Button from '../formElements/button/button';
 import { Container } from '../../views/servicesView/servicesView.styles';
-import { ContactFormContainer, ButtonDiv } from './contactForm.styles';
+import { ContactFormContainer, ButtonDiv, Notify } from './contactForm.styles';
 
 const ContactForm = () => {
   const [values, setValues] = useState({ name: '', email: '', services: '', message: '' });
@@ -17,9 +17,11 @@ const ContactForm = () => {
   };
 
   const sendNotification = () => {
-    new Noty({
-      text: 'Thank you for your mail. We will contact you shortly'
-    }).show();
+    const node = document.createElement('p');
+    const textnode = document.createTextNode('Thank you for your mail. We will contact you shortly');
+    node.appendChild(textnode);
+    document.getElementById('notify').appendChild(node);
+
   };
 
   const resetForm = () => {
@@ -37,27 +39,18 @@ const ContactForm = () => {
       to_name: 'Mindplus Admin',
       message_html: message
     };
-    await emailjs.send('info@mindplus.biz', 'template_HODWN9od', templateParams, 'user_d6JNSmosRt6azEHgC1dwe');
-    // new Noty({
-    //   text: 'Thank you for your mail. We will contact you shortly'
-    // }).show();
+    emailjs.send('info@mindplus.biz', 'template_HODWN9od', templateParams, 'user_d6JNSmosRt6azEHgC1dwe');
     resetForm();
-
-    new Noty({
-      layout: 'topRight',
-      theme: 'sunset',
-      closeWith: ['click'],
-      text: 'Thank you for your mail. We will contact you shortly',
-      animation: {
-        open: 'animated bounceInRight', // Animate.css class names
-        close: 'animated bounceOutRight' // Animate.css class names
-      }
-    }).show();
+    sendNotification();
+    setTimeout(() => {
+      document.getElementById('notify').style.display = ' none';
+    }, 4000);
   };
 
   return (
     <Container>
       <h1>Get in Touch</h1>
+      <div id="notify" />
       <ContactFormContainer>
         <Form onSubmit={handleSubmit}>
           <FormGroup controlId="formBasicEmail">
