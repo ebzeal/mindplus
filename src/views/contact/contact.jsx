@@ -14,16 +14,20 @@ const Contact = () => (
   <ContactDiv>
     <h2>CONTACTS</h2>
     <ContactDetailsDiv>
-      <ContactDetails>
+      <ContactDetails
+        href="https://wa.me/2348033291473?text=Hi,%20I%20got%20linked%20from%20your%20website"
+        rel="nofollow"
+        target="_top"
+      >
         <CallIcon />
         <span> 234-803-329-1473 </span>
       </ContactDetails>
 
-      <ContactDetails>
+      <ContactDetails href="mailto:info@mindplus.biz" rel="nofollow" target="_top">
         <MailIcon />
         <span> info@mindplus.biz </span>
       </ContactDetails>
-      <ContactDetails href="https://www.instagram.com/noruwaedokpolo/?hl=en">
+      <ContactDetails href="https://www.instagram.com/noruwaedokpolo/?hl=en" target="_blank" rel="noopener noreferrer">
         <InstagramIcon />
         <span> noruwaedokpolo </span>
       </ContactDetails>
@@ -31,7 +35,7 @@ const Contact = () => (
         <FacebookIcon />
         <span> Noruwa Edokpolo </span>
       </ContactDetails>
-      <ContactDetails href="https://www.linkedin.com/in/noruwa/">
+      <ContactDetails href="https://www.linkedin.com/in/noruwa/" target="_blank" rel="noopener noreferrer">
         <LinkedinIcon />
         <span> noruwa </span>
       </ContactDetails>
@@ -39,11 +43,12 @@ const Contact = () => (
         <TwitterIcon />
         <span> noruwa </span>
       </ContactDetails>
-      <ContactDetails href="https://businessmentorships.blogspot.com/">
+      <ContactDetails href="https://businessmentorships.blogspot.com/" target="_blank" rel="noopener noreferrer">
         <BlogIcon />
         <span> Blog </span>
       </ContactDetails>
     </ContactDetailsDiv>
+    <p>Address: 4/6 Abiola Bolaji Street, Praise Hill estate, Arepo Ogun State</p>
   </ContactDiv>
 );
 

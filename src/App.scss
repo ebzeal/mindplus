@@ -61,6 +61,16 @@ a {
   box-sizing: border-box;
 }
 
+#notify {
+  position: absolute;
+  top:20%;
+  right: 20%;
+  background-color: orange;
+  color: black;
+  padding: 1%;
+  border-radius:5px;
+}
+
 
 @media only screen and (max-device-width: 650px) {
   h1 {

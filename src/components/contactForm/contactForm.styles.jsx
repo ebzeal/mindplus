@@ -29,4 +29,8 @@ const ButtonDiv = styled.div`
   margin-top: 8%;
 `;
 
-export { ContactFormContainer, ButtonDiv };
+const Notify = styled.div`
+display: '${props => props.display}';
+`;
+
+export { ContactFormContainer, ButtonDiv, Notify };
