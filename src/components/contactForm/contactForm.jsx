@@ -5,7 +5,7 @@ import * as emailjs from 'emailjs-com';
 
 import Button from '../formElements/button/button';
 import { Container } from '../../views/servicesView/servicesView.styles';
-import { ContactFormContainer, ButtonDiv } from './contactForm.styles';
+import { ContactFormContainer, ButtonDiv, Notify } from './contactForm.styles';
 
 const ContactForm = () => {
   const [values, setValues] = useState({ name: '', email: '', services: '', message: '' });
@@ -13,6 +13,13 @@ const ContactForm = () => {
   const handleChange = e => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
+  };
+
+  const sendNotification = () => {
+    const node = document.createElement('p');
+    const textnode = document.createTextNode('Thank you for your mail. We will contact you shortly');
+    node.appendChild(textnode);
+    document.getElementById('notify').appendChild(node);
   };
 
   const resetForm = () => {
@@ -31,13 +38,18 @@ const ContactForm = () => {
       to_name: 'Mindplus Admin',
       message_html: message
     };
-    emailjs.send('gmail', 'template_HODWN9od', templateParams, 'user_d6JNSmosRt6azEHgC1dwe');
+    emailjs.send('info@mindplus.biz', 'template_HODWN9od', templateParams, 'user_d6JNSmosRt6azEHgC1dwe');
     resetForm();
+    sendNotification();
+    setTimeout(() => {
+      document.getElementById('notify').style.display = ' none';
+    }, 4000);
   };
 
   return (
     <Container>
       <h1>Get in Touch</h1>
+      <div id="notify" />
       <ContactFormContainer>
         <Form onSubmit={handleSubmit}>
           <FormGroup controlId="formBasicEmail">
