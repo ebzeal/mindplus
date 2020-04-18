@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/ebzeal/mindplus/issues"
   },
-  "homepage": "https://github.com/ebzeal/mindplus#readme",
+  "homepage": "http://mindplus.biz",
   "dependencies": {
     "@babel/runtime": "^7.8.7",
     "axios": "^0.19.2",

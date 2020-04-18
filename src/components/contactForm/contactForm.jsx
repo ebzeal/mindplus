@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { Form, FormGroup, Label, Input } from 'reactstrap';
 import * as emailjs from 'emailjs-com';
+import Noty from 'noty';
 
 import Button from '../formElements/button/button';
 import { Container } from '../../views/servicesView/servicesView.styles';
@@ -20,16 +21,16 @@ const ContactForm = () => {
     const textnode = document.createTextNode('Thank you for your mail. We will contact you shortly');
     node.appendChild(textnode);
     document.getElementById('notify').appendChild(node);
+
   };
 
   const resetForm = () => {
     setValues({ name: '', email: '', services: '', message: '' });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
     const { name, email, message } = values;
-    // resetForm();
     const templateParams = {
       send_to: 'info@mindplus.biz',
       sent_by: 'info@mindplus.biz',
