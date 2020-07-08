@@ -14,12 +14,16 @@ const Contact = () => (
   <ContactDiv>
     <h2>CONTACTS</h2>
     <ContactDetailsDiv>
-      <ContactDetails href="https://wa.me/2348033291473?text=Hi,%20I%20got%20linked%20from%20your%20website">
+      <ContactDetails
+        href="https://wa.me/2348033291473?text=Hi,%20I%20got%20linked%20from%20your%20website"
+        rel="nofollow"
+        target="_top"
+      >
         <CallIcon />
         <span> 234-803-329-1473 </span>
       </ContactDetails>
 
-      <ContactDetails href="mailto:info@mindplus.biz" target="_blank" rel="noopener noreferrer">
+      <ContactDetails href="mailto:info@mindplus.biz" rel="nofollow" target="_top">
         <MailIcon />
         <span> info@mindplus.biz </span>
       </ContactDetails>

@@ -5,9 +5,15 @@ import ButtonDiv from '../formElements/button/button';
 
 import ContactDiv from './bannerContact.styles';
 
-const BannerContact = ({ history }) => (
-  <ContactDiv onClick={() => history.push('/contact')}>
-    <ButtonDiv text="contact us" className="button" />
+const BannerContact = ({ history, text = 'contact us', url = '/contact', external }) => (
+  <ContactDiv
+    onClick={() =>
+      external
+        ? (window.location.href = 'https://us02web.zoom.us/meeting/register/tZwscOmrqDguHNYggzTsbalwkv_ELwqV-aav')
+        : history.push(url)
+    }
+  >
+    <ButtonDiv text={text} className="button" />
   </ContactDiv>
 );
 
