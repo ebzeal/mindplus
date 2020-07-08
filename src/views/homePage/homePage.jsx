@@ -6,6 +6,7 @@ import Services from '../servicesView/servicesView';
 import Teams from '../teamsView/teamsView';
 import Newsletter from '../newsletter/newsletter';
 import Contact from '../contact/contact';
+import Jingle from '../../components/jingle';
 
 const HomePage = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -13,6 +14,7 @@ const HomePage = () => {
     <>
       <Advert />
       {/* <Banner /> */}
+      <Jingle />
       <About />
       <Teams />
       <Services />
