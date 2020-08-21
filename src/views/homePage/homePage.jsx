@@ -12,8 +12,8 @@ const HomePage = () => {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <Advert />
-      {/* <Banner /> */}
+      {/* <Advert /> */}
+      <Banner />
       <Jingle />
       <About />
       <Teams />
