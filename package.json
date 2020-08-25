@@ -7,8 +7,8 @@
     "test": "jest -u --coverage",
     "test:coverage": "jest --coverage --colors && cat ./coverage/lcov.info",
     "test:watch": "jest -u --coverage --watch",
-    "build": "webpack",
-    "dev": "webpack-dev-server  --open --hot",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack-dev-server  --open --hot --config webpack.dev.js",
     "lint": "eslint src --fix"
   },
   "repository": {
@@ -41,7 +41,8 @@
     "react-helmet": "^5.2.1",
     "react-router-dom": "^5.1.2",
     "reactstrap": "^8.4.1",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "terser-webpack-plugin": "^4.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -77,6 +78,7 @@
     "mini-css-extract-plugin": "^0.9.0",
     "moxios": "^0.4.0",
     "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
     "react-svg-loader": "^3.0.3",
