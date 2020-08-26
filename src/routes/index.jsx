@@ -5,6 +5,7 @@ import HomePage from '../views/homePage/homePage';
 import AboutPage from '../views/aboutPage/aboutPage';
 import ServicesPage from '../views/servicesPage/servicesPage';
 import TeamPage from '../views/teamPage/teamPage';
+import ResourcePage from '../views/resourcePage/resourcePage';
 import ContactPage from '../views/contactPage/contactPage';
 import EventPage from '../views/eventsPage/eventsPage';
 import Header from '../components/header/header';
@@ -17,6 +18,7 @@ const Routes = () => (
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/services" component={ServicesPage} />
       <Route exact path="/team" component={TeamPage} />
+      <Route exact path="/resources" component={ResourcePage} />
       <Route exact path="/contact" component={ContactPage} />
       <Route exact path="/events" component={EventPage} />
     </Switch>
