@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, FormGroup, Label, Input } from 'reactstrap';
 import * as emailjs from 'emailjs-com';
+import Button from '../formElements/button/button';
 
 import { DownloadFormContainer, ButtonDiv, DownloadButton } from './DownloadForm.styles';
 
@@ -19,7 +20,7 @@ const DownloadForm = ({ isDownload }) => {
   const handleSubmit = async e => {
     e.preventDefault();
     const { name, email } = values;
-    if (email || name === '') return null;
+    if ((email || name) === '') return null;
     const templateParams = {
       send_to: 'info@mindplus.biz',
       sent_by: 'info@mindplus.biz',
@@ -30,6 +31,7 @@ const DownloadForm = ({ isDownload }) => {
     };
     emailjs.send('info@mindplus.biz', 'template_HODWN9od', templateParams, 'user_d6JNSmosRt6azEHgC1dwe');
     resetForm();
+    window.open('/On-your-marks.pdf', '_blank');
     isDownload();
   };
 
@@ -62,9 +64,7 @@ const DownloadForm = ({ isDownload }) => {
           />
         </FormGroup>
         <ButtonDiv>
-          <DownloadButton href="/On-your-marks.pdf" download onClick={handleSubmit}>
-            Download
-          </DownloadButton>
+          <Button text="Download">Download</Button>
         </ButtonDiv>
       </Form>
     </DownloadFormContainer>
