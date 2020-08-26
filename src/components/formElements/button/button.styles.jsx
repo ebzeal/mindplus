@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export default styled.button.attrs(({ type, size }) => ({
-  type
+export default styled.button.attrs(({ type, size, onClick }) => ({
+  type,
+  onClick
 }))`
   background: -webkit-linear-gradient(180deg, #fddb71 0%, #f0883f 100%);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
