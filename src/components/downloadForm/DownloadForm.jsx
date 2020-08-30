@@ -5,8 +5,12 @@ import Button from '../formElements/button/button';
 
 import { DownloadFormContainer, ButtonDiv, DownloadButton } from './DownloadForm.styles';
 
-const DownloadForm = ({ isDownload }) => {
+const DownloadForm = ({ isDownload, book }) => {
   const [values, setValues] = useState({ name: '', email: '' });
+  const bookArr = [
+    { name: 'On Your Marks: A Business Start-up Handbook', link: '/On-your-marks.pdf' },
+    { name: 'Naked: The mystery of openness in marriage', link: '/naked-ebook-copy.pdf' }
+  ];
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -27,11 +31,11 @@ const DownloadForm = ({ isDownload }) => {
       from_name: name,
       email,
       to_name: 'Mindplus Admin',
-      message_html: `${name}, email:${email}, just downloaded the free chapter of "On Your Marks: A Business Start-up Handbook"`
+      message_html: `${name}, email:${email}, just downloaded the free chapter of "${bookArr[book].name}"`
     };
     emailjs.send('info@mindplus.biz', 'template_HODWN9od', templateParams, 'user_d6JNSmosRt6azEHgC1dwe');
     resetForm();
-    window.open('/On-your-marks.pdf', '_blank');
+    window.open(`${bookArr[book].link}`, '_blank');
     isDownload();
   };
 

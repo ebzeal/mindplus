@@ -8,8 +8,10 @@ import DownloadForm from '../../components/downloadForm/DownloadForm';
 
 const Resources = () => {
   const [showDownload, setShowDownload] = useState(false);
+  const [bookNum, setBookNum] = useState('0');
 
-  const isDownload = () => {
+  const isDownload = num => {
+    setBookNum(num);
     return setShowDownload(!showDownload);
   };
   return (
@@ -22,8 +24,9 @@ const Resources = () => {
             text="Starting and running a successful business can be a tough or an easy task, it depends on who is guiding you. This book makes it easy to start and run your own business. Based on over 20 years experience of working with entrepreneurs."
             readMore
             isDownload={isDownload}
+            setBookNum="0"
           />
-          {showDownload ? <DownloadForm isDownload={isDownload} /> : null}
+          {showDownload && bookNum === '0' ? <DownloadForm isDownload={isDownload} book="0" /> : null}
         </div>
         <div>
           <BookCard
@@ -31,7 +34,10 @@ const Resources = () => {
             name="Naked: The mystery of openness in marriage"
             text="In this great book, Noruwa Edokpolo uses physical human nakedness as a metaphor to share deep, thought-provoking insights on the secrets to a blissful marriage."
             readMore
+            isDownload={isDownload}
+            setBookNum="1"
           />
+          {showDownload && bookNum === '1' ? <DownloadForm isDownload={isDownload} book="1" /> : null}
         </div>
       </TeamContainer>
     </Container>
