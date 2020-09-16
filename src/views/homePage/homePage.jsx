@@ -15,7 +15,6 @@ const HomePage = () => {
     <>
       {/* <Advert /> */}
       <Banner />
-      <Jingle />
       <About />
       <Teams />
       <Services />
