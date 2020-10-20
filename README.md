@@ -1,6 +1,6 @@
 # Mindplus
 
-A Human Capital and Business Development company.
+A Human Capital and Business Development company. https://mindplus.biz/
 
 # Installation
 
